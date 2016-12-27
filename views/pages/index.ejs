@@ -6,10 +6,25 @@
 
 <body>
 
-    <div class="container">
-        <h2 class="text-center">Hello World!</h2>
-        <hr />
-    </div>
+    <div class="container-fluid">
+           <h2 class="text-center">P2P Video Chat</h2>
+           <hr />
+       </div>
+       <div class="container">
+           <div class="col-md-4">
+               <label>My ID: </label><br/>
+               <textarea id="yourId" rows="8" cols="80" class="form-control"></textarea><br/>
+               <label>Other ID: </label><br/>
+               <textarea id="otherId" rows="8" cols="80" class="form-control"></textarea><br/>
+               <button type="button" id="connect" class="btn btn-md btn-primary">Connect</button><br/><br/>
+
+               <label>Enter Message: </label><br/>
+               <textarea id="yourMessage" rows="8" cols="80" class="form-control"></textarea><br/>
+               <button type="button" id="send" class="btn btn-md btn-success">Send</button><br/><br/>
+               <pre id="messages"></pre>
+
+           </div>
+       </div>
 
 </body>
 </html>
